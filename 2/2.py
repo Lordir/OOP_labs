@@ -96,7 +96,9 @@ class MainWindow(QMainWindow):
 
     def get_data4(self, s):
         try:
-            self.number = int(s)
+            n = int(s)
+            if n > 0:
+                self.number = n
         except:
             pass
 
