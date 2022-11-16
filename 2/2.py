@@ -8,7 +8,6 @@ class MainWindow(QMainWindow):
     def __init__(self):
         super(MainWindow, self).__init__()
         self.setWindowTitle("Стоимость кофе")
-        dict_values = {}
         self.output_value = 0
         self.flag1 = False
         self.flag2 = False
@@ -52,7 +51,6 @@ class MainWindow(QMainWindow):
         self.button = QtWidgets.QPushButton(self)
         self.button.setText("=")
         self.button.move(400, 30)
-        # self.button.clicked.connect(self.clicked_button)
         self.button.clicked.connect(lambda: self.clicked_button())
 
         self.output_text = QtWidgets.QLabel(self)
